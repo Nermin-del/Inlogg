@@ -60,10 +60,10 @@ loginButton.onclick = () => { //sätter upp en eventlyssnare på click eventet f
     }
 }
 
-logOutButton.onclick(() => { // tar bort datan ur localstorage när man loggar ut
+logOutButton.onclick = () => { // tar bort datan ur localstorage när man loggar ut
     localStorage.removeItem("UserName");
     localStorage.removeItem("Password");
     logout();
-})
+}
 
 onStart(); // Detta tar reda på vad man vill visa på hemsidan. När man öppnar index.html så injicerar js filen och kollar om man är inloggad eller inte.
